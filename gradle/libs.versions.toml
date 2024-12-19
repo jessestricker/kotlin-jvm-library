@@ -2,11 +2,15 @@
 kotlin = "2.1.0"
 java = "23"
 
+ktfmt-gradle = "0.21.0"
+
 junit-jupiter = "5.11.4"
 kotest = "5.9.1"
 
 [plugins]
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+
+ktfmt = { id = "com.ncorti.ktfmt.gradle", version.ref = "ktfmt-gradle" }
 
 [libraries]
 kotest-assertions-core = { module = "io.kotest:kotest-assertions-core", version.ref = "kotest" }
