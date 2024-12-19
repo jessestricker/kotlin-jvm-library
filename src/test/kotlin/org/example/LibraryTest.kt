@@ -1,6 +1,6 @@
 package org.example
 
-import org.junit.jupiter.api.Assertions.assertEquals
+import io.kotest.matchers.shouldBe
 import org.junit.jupiter.api.Test
 
 class LibraryTest {
@@ -8,6 +8,6 @@ class LibraryTest {
     fun `greeting returns well-known phrase`() {
         val library = Library()
         val greeting = library.greeting
-        assertEquals("Hello, World!", greeting)
+        greeting shouldBe "Hello, World!"
     }
 }

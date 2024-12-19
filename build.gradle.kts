@@ -28,5 +28,8 @@ tasks.withType<JavaCompile> {
 testing {
     suites.named<JvmTestSuite>("test") {
         useJUnitJupiter(libs.versions.junit.jupiter)
+        dependencies {
+            implementation(libs.kotest.assertions.core)
+        }
     }
 }
