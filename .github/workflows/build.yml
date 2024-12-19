@@ -1,0 +1,6 @@
+on:
+  pull_request:
+
+jobs:
+  gradle:
+    runs-on: ubuntu-24.04
