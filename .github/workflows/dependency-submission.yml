@@ -5,6 +5,8 @@ on:
 jobs:
   gradle:
     name: Gradle
+    permissions:
+      contents: write
     runs-on: ubuntu-24.04
     steps:
       - name: Checkout
