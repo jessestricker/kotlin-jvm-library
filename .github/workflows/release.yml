@@ -30,7 +30,7 @@ jobs:
       - name: Install NPM dependencies
         run: npm clean-install
       - name: Release
-        run: npx semantic-release --dry-run
+        run: npx semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   build:
