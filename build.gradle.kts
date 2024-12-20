@@ -3,6 +3,7 @@
 plugins {
     alias(libs.plugins.kotlin.jvm)
 
+    alias(libs.plugins.detekt)
     alias(libs.plugins.ktfmt)
 }
 
@@ -28,6 +29,11 @@ testing {
             implementation(libs.kotest.assertions.core)
         }
     }
+}
+
+detekt {
+    buildUponDefaultConfig = true
+    config.setFrom(".config/detekt.yml")
 }
 
 ktfmt {

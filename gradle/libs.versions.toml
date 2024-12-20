@@ -2,6 +2,7 @@
 kotlin = "2.1.0"
 java = "21"
 
+detekt = "1.23.7"
 ktfmt-gradle = "0.21.0"
 
 junit-jupiter = "5.11.4"
@@ -10,6 +11,7 @@ kotest = "5.9.1"
 [plugins]
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
 
+detekt = { id = "io.gitlab.arturbosch.detekt", version.ref = "detekt" }
 ktfmt = { id = "com.ncorti.ktfmt.gradle", version.ref = "ktfmt-gradle" }
 
 [libraries]
