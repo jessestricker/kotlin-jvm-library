@@ -4,6 +4,7 @@ plugins {
     alias(libs.plugins.kotlin.jvm)
 
     alias(libs.plugins.detekt)
+    alias(libs.plugins.kover)
     alias(libs.plugins.ktfmt)
 }
 
