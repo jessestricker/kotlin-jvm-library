@@ -1,6 +1,6 @@
 [versions]
 kotlin = "2.1.0"
-java = "23"
+java = "21"
 
 ktfmt-gradle = "0.21.0"
 
