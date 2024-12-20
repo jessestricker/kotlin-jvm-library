@@ -5,7 +5,6 @@
     "semantic-release": "24.2.0"
   },
   "release": {
-    "branches": "feat/release-workflow",
     "preset": "conventionalcommits",
     "plugins": [
       "@semantic-release/commit-analyzer",

@@ -1,7 +1,7 @@
 name: Release
 on:
   push:
-    branches: [ main, feat/release-workflow ]
+    branches: [ main ]
 jobs:
   gradle:
     name: Gradle
