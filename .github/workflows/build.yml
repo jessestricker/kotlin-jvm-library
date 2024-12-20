@@ -20,11 +20,6 @@ jobs:
           cache-encryption-key: ${{ secrets.GRADLE_ENCRYPTION_KEY }}
       - name: Build
         run: ./gradlew build
-      - name: Upload artifact
-        uses: actions/upload-artifact@6f51ac03b9356f520e9adb1b1b7802705f340c2b # v4.5.0
-        with:
-          name: libraries
-          path: build/libs
       - name: Generate coverage report
         run: ./gradlew koverHtmlReport
       - name: Upload coverage report
