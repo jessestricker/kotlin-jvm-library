@@ -7,6 +7,7 @@ jobs:
     name: Gradle
     permissions:
       contents: write
+      packages: write
     needs: [ build ]
     runs-on: ubuntu-24.04
     steps:
