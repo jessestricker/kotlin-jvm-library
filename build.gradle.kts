@@ -9,6 +9,8 @@ plugins {
     alias(libs.plugins.ktfmt)
 }
 
+group = "org.example"
+
 repositories {
     mavenCentral()
 }
