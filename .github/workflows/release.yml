@@ -1,7 +1,7 @@
 name: Release
 on:
   push:
-    branches: [ main ]
+    branches: [main]
 jobs:
   gradle:
     name: Gradle
@@ -10,7 +10,7 @@ jobs:
       issues: write
       packages: write
       pull-requests: write
-    needs: [ checks ]
+    needs: [checks]
     runs-on: ubuntu-24.04
     steps:
       - name: Checkout
