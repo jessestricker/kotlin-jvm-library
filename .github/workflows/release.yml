@@ -1,7 +1,7 @@
 name: Release
 on:
   push:
-    branches: [ main ]
+    branches: [main]
 jobs:
   gradle:
     name: Gradle
@@ -10,7 +10,7 @@ jobs:
       issues: write
       packages: write
       pull-requests: write
-    needs: [ build ]
+    needs: [checks]
     runs-on: ubuntu-24.04
     steps:
       - name: Checkout
@@ -35,5 +35,5 @@ jobs:
         run: npx semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-  build:
-    uses: ./.github/workflows/build.yml
+  checks:
+    uses: ./.github/workflows/checks.yml

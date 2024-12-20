@@ -1,7 +1,7 @@
 name: Dependency Submission
 on:
   push:
-    branches: [ main ]
+    branches: [main]
 jobs:
   gradle:
     name: Gradle
