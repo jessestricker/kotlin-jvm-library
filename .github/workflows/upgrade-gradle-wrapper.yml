@@ -25,13 +25,13 @@ jobs:
       - name: Get latest Gradle version
         run: |
           latest_version_json=$(curl --silent 'https://services.gradle.org/versions/current')
-          latest_version=$(jq --raw-output '.version' <<< "$latest_version_json")
-          echo "latest_version=$latest_version" >> "$GITHUB_ENV"
+          latest_version=$(jq --raw-output '.version' <<<"${latest_version_json}")
+          echo "latest_version=${latest_version}" >>"${GITHUB_ENV}"
           echo "::notice ::The latest Gradle version is ${latest_version}."
       - name: Upgrade Gradle Wrapper
         run: |
-          ./gradlew wrapper --gradle-version="$latest_version"
-          ./gradlew wrapper --gradle-version="$latest_version"
+          ./gradlew wrapper --gradle-version="${latest_version}"
+          ./gradlew wrapper --gradle-version="${latest_version}"
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@67ccf781d68cd99b580ae25a5c18a1cc84ffff1f # v7.0.6
         with:
