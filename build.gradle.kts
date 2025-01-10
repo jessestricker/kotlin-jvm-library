@@ -60,6 +60,12 @@ detekt {
     config.setFrom(".config/detekt.yml")
 }
 
+dokka {
+    dokkaSourceSets.main {
+        includes.from("src/main/kotlin/Module.md")
+    }
+}
+
 ktfmt {
     kotlinLangStyle()
 }
