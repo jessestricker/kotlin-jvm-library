@@ -1,7 +1,6 @@
 {
   "scripts": {
-    "format": "prettier --write .",
-    "format-check": "prettier --check ."
+    "format": "prettier --write ."
   },
   "devDependencies": {
     "@semantic-release/exec": "6.0.3",
