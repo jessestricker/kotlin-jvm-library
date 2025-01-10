@@ -11,10 +11,6 @@ plugins {
 
 group = "org.example"
 
-repositories {
-    mavenCentral()
-}
-
 kotlin {
     explicitApi()
     compilerOptions {
