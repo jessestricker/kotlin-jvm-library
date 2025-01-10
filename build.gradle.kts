@@ -4,6 +4,7 @@ plugins {
     alias(libs.plugins.kotlin.jvm)
     `maven-publish`
 
+    alias(libs.plugins.binaryCompatibilityValidator)
     alias(libs.plugins.detekt)
     alias(libs.plugins.kover)
     alias(libs.plugins.ktfmt)
