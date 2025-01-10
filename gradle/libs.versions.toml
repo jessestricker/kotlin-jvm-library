@@ -3,7 +3,7 @@ kotlin = "2.1.0"
 java = "21"
 
 detekt = "1.23.7"
-kover = "0.8.3"
+kover = "0.9.1"
 ktfmt-gradle = "0.21.0"
 
 junit-jupiter = "5.11.4"
