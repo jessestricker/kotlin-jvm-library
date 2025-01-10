@@ -6,6 +6,7 @@ plugins {
 
     alias(libs.plugins.binaryCompatibilityValidator)
     alias(libs.plugins.detekt)
+    alias(libs.plugins.dokka)
     alias(libs.plugins.kover)
     alias(libs.plugins.ktfmt)
 }
