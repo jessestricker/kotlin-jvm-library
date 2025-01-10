@@ -16,7 +16,8 @@
       [
         "@semantic-release/exec",
         {
-          "publishCmd": "./gradlew publish dokkaGenerate -Pversion=\"${nextRelease.version}\""
+          "publishCmd": "./gradlew publish dokkaGenerate -Pversion=\"${nextRelease.version}\"",
+          "successCmd": "echo 'RELEASE_SUCCESS=1' >> \"$GITHUB_ENV\""
         }
       ],
       "@semantic-release/github"
