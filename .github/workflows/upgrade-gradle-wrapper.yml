@@ -37,8 +37,10 @@ jobs:
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@67ccf781d68cd99b580ae25a5c18a1cc84ffff1f # v7.0.6
         with:
-          commit-message: "chore(gradle): bump Gradle Wrapper to ${{ env.latest_version }}"
+          commit-message: >
+            chore(gradle): bump Gradle Wrapper to ${{ env.latest_version }}
           branch: "chore/upgrade-gradle-wrapper-${{ env.latest_version }}"
-          title: "chore(gradle): bump Gradle Wrapper to ${{ env.latest_version }}"
+          title: >
+            chore(gradle): bump Gradle Wrapper to ${{ env.latest_version }}
           body: |
             Bumps the Gradle Wrapper to [${{ env.latest_version }}](https://docs.gradle.org/${{ env.latest_version }}/release-notes.html).
