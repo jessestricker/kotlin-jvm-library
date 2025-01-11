@@ -1,0 +1,20 @@
+{
+  "preset": "conventionalcommits",
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    [
+      "@semantic-release/exec",
+      {
+        "publishCmd": "./gradlew publish dokkaGenerate -Pversion='${nextRelease.version}'",
+        "successCmd": "echo 'RELEASE_SUCCESS=1' >> \"$GITHUB_ENV\""
+      }
+    ],
+    [
+      "@semantic-release/github",
+      {
+        "assets": "build/libs"
+      }
+    ]
+  ]
+}
