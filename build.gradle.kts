@@ -1,5 +1,7 @@
 @file:Suppress("UnstableApiUsage")
 
+import java.util.jar.Attributes.Name as AttributeName
+
 plugins {
     alias(libs.plugins.kotlin.jvm)
     `maven-publish`
@@ -26,6 +28,15 @@ kotlin {
 
 java {
     withSourcesJar()
+}
+
+tasks.jar {
+    manifest {
+        attributes(
+            AttributeName.IMPLEMENTATION_TITLE.toString() to "${project.group}.${project.name}",
+            AttributeName.IMPLEMENTATION_VERSION.toString() to project.version,
+        )
+    }
 }
 
 testing {
