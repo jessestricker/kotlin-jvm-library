@@ -20,3 +20,4 @@ After creating a new repository from this template, do the following:
 - On GitHub
   - Generate a new Gradle encryption key with `openssl rand -base64 16` and set
     it as the action secret `GRADLE_ENCRYPTION_KEY`.
+  - Enable repository setting _Allow GitHub Actions to create and approve pull requests_.
