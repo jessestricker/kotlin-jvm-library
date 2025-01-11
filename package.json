@@ -20,7 +20,12 @@
           "successCmd": "echo 'RELEASE_SUCCESS=1' >> \"$GITHUB_ENV\""
         }
       ],
-      "@semantic-release/github"
+      [
+        "@semantic-release/github",
+        {
+          "assets": "build/libs"
+        }
+      ]
     ]
   }
 }
