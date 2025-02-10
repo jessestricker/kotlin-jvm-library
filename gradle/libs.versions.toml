@@ -3,7 +3,7 @@ java = "21"
 junit-jupiter = "5.11.4"
 
 [plugins]
-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version = "2.1.0" }
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version = "2.1.10" }
 
 binaryCompatibilityValidator = { id = "org.jetbrains.kotlinx.binary-compatibility-validator", version = "0.17.0" }
 detekt = { id = "io.gitlab.arturbosch.detekt", version = "1.23.7" }
