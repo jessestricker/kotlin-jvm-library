@@ -45,4 +45,4 @@ jobs:
       - name: Install NPM dependencies
         run: pnpm install
       - name: Check
-        run: pnpm exec prettier --check .
+        run: pnpm run format:check
