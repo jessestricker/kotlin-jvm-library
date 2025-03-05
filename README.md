@@ -19,7 +19,11 @@ After creating a new repository from this template, do the following:
   - Replace project description in [README.md](README.md).
 - On GitHub
   - Generate a new Gradle encryption key with `openssl rand -base64 16` and set
-    it as the action secret `GRADLE_ENCRYPTION_KEY`.
+    it as the action secret `GRADLE_ENCRYPTION_KEY`. See also
+    [here](https://github.com/gradle/actions/blob/main/docs/setup-gradle.md#saving-configuration-cache-data).
+  - Create a personal access token (PAT) with write access to pull requests and
+    set it as the action secret `PULL_REQUEST_TOKEN`. See also
+    [here](https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow-runs/triggering-a-workflow#triggering-a-workflow-from-a-workflow).
   - Enable repository setting _Allow GitHub Actions to create and approve pull
     requests_.
   - Set _GitHub Pages Source_ to _GitHub Actions_.
