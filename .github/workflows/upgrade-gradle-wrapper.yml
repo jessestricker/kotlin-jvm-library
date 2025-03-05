@@ -42,5 +42,6 @@ jobs:
           branch: "chore/upgrade-gradle-wrapper-${{ env.latest_version }}"
           title: >
             chore(gradle): bump Gradle Wrapper to ${{ env.latest_version }}
+          labels: dependencies, gradle
           body: |
             Bumps the Gradle Wrapper to [${{ env.latest_version }}](https://docs.gradle.org/${{ env.latest_version }}/release-notes.html).
