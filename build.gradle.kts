@@ -80,3 +80,6 @@ dokka {
 ktfmt {
     kotlinLangStyle()
 }
+tasks.ktfmtCheckScripts {
+    enabled = false
+}
