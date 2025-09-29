@@ -17,6 +17,6 @@ jobs:
           java-version: 21
           distribution: temurin
       - name: Submit dependencies
-        uses: gradle/actions/dependency-submission@ac638b010cf58a27ee6c972d7336334ccaf61c96 # v4.4.1
+        uses: gradle/actions/dependency-submission@748248ddd2a24f49513d8f472f81c3a07d4d50e1 # v4.4.4
         with:
           cache-encryption-key: ${{ secrets.GRADLE_ENCRYPTION_KEY }}
